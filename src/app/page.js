@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 export default function Home() {
   return (
     <main>
@@ -18,6 +19,8 @@ export default function Home() {
       <Projects />
 
       <Experience />
+
+      <Education />
 
       <section
         id="contact"
