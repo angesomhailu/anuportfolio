@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
     FiGithub,
     FiLinkedin,
@@ -28,9 +29,16 @@ export default function Footer() {
                     <div>
                         <Link
                             href="#home"
-                            className="text-2xl font-bold"
+                            className="flex items-center"
                         >
-                            Angesom<span className="text-blue-500">.</span>
+                            <Image
+                                src="/logo.png"
+                                alt="Angesom Hailu Logo"
+                                width={20}
+                                height={25}
+                                priority
+                                className="h-auto w-[120px] object-contain sm:w-[140px]"
+                            />
                         </Link>
 
                         <p className="mt-4 max-w-sm leading-7 text-gray-400">
@@ -72,8 +80,6 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Navigation */}
-
 
                     {/* CTA */}
                     <div>
@@ -98,7 +104,6 @@ export default function Footer() {
 
                 {/* Bottom */}
                 <div>
-
 
                     <nav className="mt-5 flex flex-wrap gap-4">
                         {navLinks.map((link) => (

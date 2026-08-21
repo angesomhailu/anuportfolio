@@ -34,7 +34,7 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="bg-white px-6 py-24"
+            className="bg-white px-6 py-24 transition-colors duration-300 dark:bg-gray-950"
         >
             <div className="mx-auto max-w-6xl">
 
@@ -44,11 +44,11 @@ export default function Experience() {
                         My Experience
                     </p>
 
-                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
+                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
                         Where I've Worked
                     </h2>
 
-                    <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+                    <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
                         My professional experience and the technologies I have
                         worked with throughout my development journey.
                     </p>
@@ -58,7 +58,7 @@ export default function Experience() {
                 <div className="relative">
 
                     {/* Vertical line */}
-                    <div className="absolute left-3 top-0 hidden h-full w-px bg-gray-200 md:block" />
+                    <div className="absolute left-3 top-0 hidden h-full w-px bg-gray-200 dark:bg-gray-800 md:block" />
 
                     {experiences.map((experience) => (
                         <div
@@ -67,41 +67,41 @@ export default function Experience() {
                         >
 
                             {/* Timeline dot */}
-                            <div className="absolute left-0 top-2 hidden h-7 w-7 items-center justify-center rounded-full border-4 border-white bg-blue-600 shadow md:flex" />
+                            <div className="absolute left-0 top-2 hidden h-7 w-7 items-center justify-center rounded-full border-4 border-white bg-blue-600 shadow dark:border-gray-950 md:flex" />
 
                             {/* Experience Card */}
-                            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-7 shadow-sm transition duration-300 hover:shadow-lg md:p-9">
+                            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-7 shadow-sm transition duration-300 hover:shadow-lg md:p-9 dark:border-gray-800 dark:bg-gray-900">
 
                                 {/* Header */}
                                 <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
 
                                     <div>
-                                        <h3 className="text-2xl font-bold text-gray-900">
+                                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                                             {experience.position}
                                         </h3>
 
-                                        <p className="mt-2 text-lg font-semibold text-blue-600">
+                                        <p className="mt-2 text-lg font-semibold text-blue-600 dark:text-blue-400">
                                             {experience.company}
                                         </p>
 
-                                        <p className="mt-1 text-sm text-gray-500">
+                                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                                             {experience.location}
                                         </p>
                                     </div>
 
-                                    <div className="rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600">
+                                    <div className="rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600 dark:bg-blue-950/50 dark:text-blue-400">
                                         {experience.period}
                                     </div>
                                 </div>
 
                                 {/* Description */}
-                                <p className="mt-6 text-lg leading-8 text-gray-600">
+                                <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
                                     {experience.description}
                                 </p>
 
                                 {/* Responsibilities */}
                                 <div className="mt-8">
-                                    <h4 className="text-lg font-bold text-gray-900">
+                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white">
                                         Responsibilities
                                     </h4>
 
@@ -110,7 +110,7 @@ export default function Experience() {
                                             (responsibility) => (
                                                 <li
                                                     key={responsibility}
-                                                    className="flex gap-3 text-gray-600"
+                                                    className="flex gap-3 text-gray-600 dark:text-gray-300"
                                                 >
                                                     <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-blue-600" />
 
@@ -125,7 +125,7 @@ export default function Experience() {
 
                                 {/* Technologies */}
                                 <div className="mt-8">
-                                    <h4 className="text-lg font-bold text-gray-900">
+                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white">
                                         Technologies
                                     </h4>
 
@@ -134,7 +134,7 @@ export default function Experience() {
                                             (technology) => (
                                                 <span
                                                     key={technology}
-                                                    className="rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm"
+                                                    className="rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm dark:bg-gray-950 dark:text-gray-300 dark:shadow-md"
                                                 >
                                                     {technology}
                                                 </span>

@@ -19,7 +19,7 @@ const skills = [
 
 export default function Skills() {
     return (
-        <section id="skills" className="bg-white px-6 py-24">
+        <section id="skills" className="bg-white px-6 py-24 transition-colors duration-300 dark:bg-gray-950">
             <div className="mx-auto max-w-6xl">
 
                 {/* Heading */}
@@ -28,11 +28,11 @@ export default function Skills() {
                         My Skills
                     </p>
 
-                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
+                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
                         Technologies I Work With
                     </h2>
 
-                    <p className="mt-4 max-w-2xl text-lg text-gray-600">
+                    <p className="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
                         Here are some of the technologies and tools I use to
                         design and develop modern web applications.
                     </p>
@@ -43,7 +43,7 @@ export default function Skills() {
                     {skills.map((skill) => (
                         <div
                             key={skill}
-                            className="rounded-lg border border-gray-200 bg-gray-50 px-5 py-3 font-medium text-gray-700 transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 hover:shadow-md"
+                            className="rounded-lg border border-gray-200 bg-gray-50 px-5 py-3 font-medium text-gray-700 transition duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 hover:shadow-md dark:border-gray-800 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-blue-400 dark:hover:text-blue-400"
                         >
                             {skill}
                         </div>

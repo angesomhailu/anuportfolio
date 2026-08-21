@@ -51,7 +51,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="bg-gray-50 px-6 py-24"
+            className="bg-gray-50 px-6 py-24 transition-colors duration-300 dark:bg-gray-900"
         >
             <div className="mx-auto max-w-6xl">
 
@@ -61,11 +61,11 @@ export default function Projects() {
                         My Work
                     </p>
 
-                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
+                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
                         Featured Projects
                     </h2>
 
-                    <p className="mt-4 max-w-2xl text-lg text-gray-600">
+                    <p className="mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-300">
                         Some of the projects I have developed using modern
                         web technologies.
                     </p>
@@ -77,12 +77,12 @@ export default function Projects() {
                     {projects.map((project) => (
                         <article
                             key={project.title}
-                            className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                            className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-gray-800 dark:bg-gray-950"
                         >
 
                             {/* Project image placeholder */}
-                            <div className="flex h-52 items-center justify-center bg-gray-100">
-                                <span className="text-gray-400">
+                            <div className="flex h-52 items-center justify-center bg-gray-100 dark:bg-gray-800">
+                                <span className="text-gray-400 dark:text-gray-500">
                                     Project Preview
                                 </span>
                             </div>
@@ -90,11 +90,11 @@ export default function Projects() {
                             {/* Content */}
                             <div className="p-6">
 
-                                <h3 className="text-xl font-bold text-gray-900">
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                                     {project.title}
                                 </h3>
 
-                                <p className="mt-3 leading-7 text-gray-600">
+                                <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
                                     {project.description}
                                 </p>
 
@@ -103,7 +103,7 @@ export default function Projects() {
                                     {project.technologies.map((technology) => (
                                         <span
                                             key={technology}
-                                            className="rounded-md bg-blue-50 px-3 py-1 text-sm font-medium text-blue-600"
+                                            className="rounded-md bg-blue-50 px-3 py-1 text-sm font-medium text-blue-600 dark:bg-blue-950/50 dark:text-blue-400"
                                         >
                                             {technology}
                                         </span>
@@ -117,7 +117,7 @@ export default function Projects() {
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 font-medium text-gray-700 transition hover:text-blue-600"
+                                        className="flex items-center gap-2 font-medium text-gray-700 transition hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                                     >
                                         <FiGithub />
                                         GitHub
@@ -127,7 +127,7 @@ export default function Projects() {
                                         href={project.demo}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 font-medium text-gray-700 transition hover:text-blue-600"
+                                        className="flex items-center gap-2 font-medium text-gray-700 transition hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                                     >
                                         <FiExternalLink />
                                         Live Demo

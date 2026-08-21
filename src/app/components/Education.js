@@ -31,7 +31,7 @@ export default function Education() {
     return (
         <section
             id="education"
-            className="bg-gray-50 px-6 py-24"
+            className="bg-gray-50 px-6 py-24 transition-colors duration-300 dark:bg-gray-900"
         >
             <div className="mx-auto max-w-6xl">
 
@@ -41,11 +41,11 @@ export default function Education() {
                         Education
                     </p>
 
-                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
+                    <h2 className="text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
                         My Academic Journey
                     </h2>
 
-                    <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+                    <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
                         My academic background combines software engineering
                         with business management.
                     </p>
@@ -57,40 +57,40 @@ export default function Education() {
                     {education.map((item) => (
                         <article
                             key={`${item.degree}-${item.institution}`}
-                            className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:p-9"
+                            className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:p-9 dark:border-gray-800 dark:bg-gray-950"
                         >
 
                             {/* Header */}
                             <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
 
                                 <div>
-                                    <h3 className="text-2xl font-bold text-gray-900">
+                                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                                         {item.degree}
                                     </h3>
 
-                                    <p className="mt-2 text-lg font-semibold text-blue-600">
+                                    <p className="mt-2 text-lg font-semibold text-blue-600 dark:text-blue-400">
                                         {item.institution}
                                     </p>
 
-                                    <p className="mt-1 text-sm text-gray-500">
+                                    <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                                         {item.location}
                                     </p>
                                 </div>
 
-                                <div className="w-fit rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600">
+                                <div className="w-fit rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600 dark:bg-blue-950/50 dark:text-blue-400">
                                     {item.period}
                                 </div>
 
                             </div>
 
                             {/* Description */}
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
                                 {item.description}
                             </p>
 
                             {/* Achievements */}
                             <div className="mt-7">
-                                <h4 className="text-lg font-bold text-gray-900">
+                                <h4 className="text-lg font-bold text-gray-900 dark:text-white">
                                     Highlights
                                 </h4>
 
@@ -98,7 +98,7 @@ export default function Education() {
                                     {item.achievements.map((achievement) => (
                                         <li
                                             key={achievement}
-                                            className="flex gap-3 text-gray-600"
+                                            className="flex gap-3 text-gray-600 dark:text-gray-300"
                                         >
                                             <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-blue-600" />
 
