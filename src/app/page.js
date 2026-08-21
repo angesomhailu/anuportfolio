@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 export default function Home() {
   return (
     <main>
@@ -14,27 +15,9 @@ export default function Home() {
 
       <Skills />
 
-      <section
-        id="projects"
-        className="min-h-screen bg-gray-50 px-6 py-24"
-      >
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Projects
-          </h2>
-        </div>
-      </section>
+      <Projects />
 
-      <section
-        id="experience"
-        className="min-h-screen bg-white px-6 py-24"
-      >
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Experience
-          </h2>
-        </div>
-      </section>
+      <Experience />
 
       <section
         id="contact"
