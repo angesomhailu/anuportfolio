@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main>
@@ -25,6 +26,7 @@ export default function Home() {
 
       <Contact />
 
+      <Footer />
     </main>
   );
 }

@@ -55,25 +55,23 @@ export default function Hero() {
                     {/* Social links */}
                     <div className="mt-8 flex items-center gap-5">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/angesomhailu"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-2xl text-gray-600 transition hover:text-gray-900"
                         >
                             <FiGithub />
                         </a>
 
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/angesom-hailu-61b86328b/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-2xl text-gray-600 transition hover:text-blue-600"
                         >
                             <FiLinkedin />
                         </a>
 
                         <a
-                            href="mailto:your-email@example.com"
+                            href="mailto:angesomhailu1414@gmail.com"
                             className="text-2xl text-gray-600 transition hover:text-blue-600"
                         >
                             <FiMail />

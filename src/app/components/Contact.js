@@ -50,7 +50,7 @@ export default function Contact() {
 
                             {/* Email */}
                             <a
-                                href="mailto:your-email@example.com"
+                                href="mailto:angesomhailu1414@gmail.com"
                                 className="flex items-center gap-4 group"
                             >
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-xl text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
@@ -63,14 +63,14 @@ export default function Contact() {
                                     </p>
 
                                     <p className="font-medium text-gray-900">
-                                        your-email@example.com
+                                        angesomhailu1414@gmail.com
                                     </p>
                                 </div>
                             </a>
 
                             {/* Phone */}
                             <a
-                                href="tel:+251000000000"
+                                href="tel:+251963520384"
                                 className="flex items-center gap-4 group"
                             >
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-xl text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
@@ -83,7 +83,7 @@ export default function Contact() {
                                     </p>
 
                                     <p className="font-medium text-gray-900">
-                                        +251 XX XXX XXXX
+                                        +251 96 352 0384
                                     </p>
                                 </div>
                             </a>
@@ -100,7 +100,7 @@ export default function Contact() {
                                     </p>
 
                                     <p className="font-medium text-gray-900">
-                                        Ethiopia
+                                        Addis Ababa, Ethiopia
                                     </p>
                                 </div>
                             </div>
@@ -116,19 +116,17 @@ export default function Contact() {
                             <div className="flex gap-4">
 
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/angesomhailu"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-gray-200 text-xl text-gray-600 transition hover:border-gray-900 hover:bg-gray-900 hover:text-white"
                                 >
                                     <FiGithub />
                                 </a>
 
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/in/angesom-hailu-61b86328b/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-gray-200 text-xl text-gray-600 transition hover:border-blue-600 hover:bg-blue-600 hover:text-white"
                                 >
                                     <FiLinkedin />
                                 </a>
