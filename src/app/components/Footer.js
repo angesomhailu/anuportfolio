@@ -73,23 +73,7 @@ export default function Footer() {
                     </div>
 
                     {/* Navigation */}
-                    <div>
-                        <h3 className="text-lg font-semibold">
-                            Quick Links
-                        </h3>
 
-                        <div className="mt-5 grid grid-cols-2 gap-3">
-                            {navLinks.map((link) => (
-                                <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    className="text-gray-400 transition hover:text-blue-400"
-                                >
-                                    {link.name}
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
 
                     {/* CTA */}
                     <div>
@@ -113,6 +97,21 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom */}
+                <div>
+
+
+                    <nav className="mt-5 flex flex-wrap gap-4">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                className="rounded-md px-2 py-1 text-sm font-medium text-gray-400 transition-all duration-300 hover:bg-gray-800 hover:text-blue-400"
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
                 <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-gray-800 pt-8 md:flex-row">
 
                     <p className="text-sm text-gray-500">

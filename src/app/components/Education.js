@@ -3,7 +3,7 @@ const education = [
         degree: "Bachelor of Science in Software Engineering",
         institution: "Mekelle University",
         location: "Ethiopia",
-        period: "2021 – 2026",
+        period: "2019/20 – 2026",
         description:
             "Studied software engineering with a focus on software development, web technologies, databases, algorithms, software architecture, and computer systems.",
         achievements: [
@@ -17,7 +17,7 @@ const education = [
         degree: "Bachelor of Arts in Business Management",
         institution: "Ethio Lens College",
         location: "Ethiopia",
-        period: "2020 – 2024",
+        period: "2019/20 – 2024",
         description:
             "Studied business management with a focus on management principles, organizational behavior, business strategy, finance, and entrepreneurship.",
         achievements: [
