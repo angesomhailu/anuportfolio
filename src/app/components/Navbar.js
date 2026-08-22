@@ -40,10 +40,10 @@ export default function Navbar() {
                     <Image
                         src="/logo.png"
                         alt="Angesom Hailu Logo"
-                        width={20}
-                        height={25}
+                        width={32}
+                        height={40}
                         priority
-                        className="h-auto w-[120px] object-contain sm:w-[140px]"
+                        className="h-10 w-auto object-contain"
                     />
                 </Link>
 

@@ -34,10 +34,10 @@ export default function Footer() {
                             <Image
                                 src="/logo.png"
                                 alt="Angesom Hailu Logo"
-                                width={20}
-                                height={25}
+                                width={32}
+                                height={40}
                                 priority
-                                className="h-auto w-[120px] object-contain sm:w-[140px]"
+                                className="h-10 w-auto object-contain"
                             />
                         </Link>
 
@@ -100,12 +100,24 @@ export default function Footer() {
                         </Link>
                     </div>
 
+                    {/* Profile Photo */}
+                    <div className="flex items-center justify-center md:justify-end">
+                        <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-gray-800 bg-gray-800 shadow-xl sm:h-32 sm:w-32">
+                            <Image
+                                src="/profile.jpg"
+                                alt="Angesom Hailu"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
+
                 </div>
 
                 {/* Bottom */}
                 <div>
 
-                    <nav className="mt-5 flex flex-wrap gap-4">
+                    <nav className="mt-5 pl-75 flex flex-wrap gap-4">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
