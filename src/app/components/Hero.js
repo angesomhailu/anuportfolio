@@ -70,8 +70,6 @@ export default function Hero() {
                             <a
                                 href="/cv.pdf"
                                 download="Angesom_Hailu_CV.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3.5 font-semibold text-gray-700 transition duration-300 hover:-translate-y-1 hover:border-blue-600 hover:text-blue-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-blue-400 dark:hover:text-blue-400"
                             >
                                 Download CV
